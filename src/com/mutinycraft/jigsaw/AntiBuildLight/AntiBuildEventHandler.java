@@ -23,7 +23,11 @@ public class AntiBuildEventHandler implements Listener {
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
     }
 
-    // Events
+    /**
+     * Checks for permission when placing blocks.
+     *
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOW)
     public void NoBuild(BlockPlaceEvent event) {
 
@@ -35,6 +39,11 @@ public class AntiBuildEventHandler implements Listener {
         }
     }
 
+    /**
+     * Checks for permission when breaking blocks.
+     *
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOW)
     public void NoBreak(BlockBreakEvent event) {
 
@@ -46,8 +55,11 @@ public class AntiBuildEventHandler implements Listener {
         }
     }
 
-    // Bucket Interaction
-
+    /**
+     * Checks for permission when emptying buckets.
+     *
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOW)
     public void NoBucketEmpty(PlayerBucketEmptyEvent event) {
 
@@ -59,6 +71,11 @@ public class AntiBuildEventHandler implements Listener {
         }
     }
 
+    /**
+     * Checks for permission when filling buckets.
+     *
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOW)
     public void NoBucketFill(PlayerBucketFillEvent event) {
 
@@ -71,8 +88,11 @@ public class AntiBuildEventHandler implements Listener {
         }
     }
 
-    // Painting/ItemFrame Interaction
-
+    /**
+     * Checks for permission when interacting with item frames.
+     *
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOW)
     public void NoHangingBreak(HangingBreakByEntityEvent event) {
 
@@ -91,6 +111,11 @@ public class AntiBuildEventHandler implements Listener {
         }
     }
 
+    /**
+     * Checks for permission when interacting with item frames.
+     *
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOW)
     public void NoHangingPlace(HangingPlaceEvent event) {
 
@@ -103,8 +128,11 @@ public class AntiBuildEventHandler implements Listener {
         }
     }
 
-    // Inventory Access
-
+    /**
+     * Checks for permission when attempting to open an inventory.
+     *
+     * @param event
+     */
     @EventHandler(priority = EventPriority.LOW)
     public void NoInventoryAccess(InventoryOpenEvent event) {
         Player player = null;

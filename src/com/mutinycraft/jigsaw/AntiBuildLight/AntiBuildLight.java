@@ -12,7 +12,6 @@ public class AntiBuildLight extends JavaPlugin implements Listener {
     private static final String VERSION = " v1.1";
     private static final String MESSAGE = "&cIf you wish to build, visit: &djoin.mutinycraft.com";
 
-    // Enable
     public void onEnable() {
         log = this.getLogger();
 
@@ -22,12 +21,15 @@ public class AntiBuildLight extends JavaPlugin implements Listener {
         log.info(this.getName() + VERSION + " enabled!");
     }
 
-    // Message Handling
+    /**
+     * Predefined message that will be sent when interaction is denied.
+     *
+     * @return message to send to player.
+     */
     public String getMessage() {
         return ChatColor.translateAlternateColorCodes('&', MESSAGE);
     }
 
-    // Disable
     public void onDispable() {
         log.info(this.getName() + VERSION + " disabled!");
     }
