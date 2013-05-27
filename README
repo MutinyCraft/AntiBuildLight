@@ -1,7 +1,7 @@
 AntiBuildLight
 ==============
 
-Light version of AntiBuild
+Extremely efficient and lightweight version of AntiBuild.  This is optimized for bare minimum permissions with absolutely no customization.
 
 Simple, efficient, and lightweight plugin that will prevent interaction with blocks until the proper permission is granted. This plugins stops all types of block interaction and it even stops bucket use and painting interaction. It also sends a customizable message to the player who is denied building rights. Before you say this already exists just look at how lightweight this plugin is compared to some of the others. This is for server owners who need a building prevention plugin that is as lightweight as possible.
 This file was modified by IntelliJ IDEA 12.1.3 for binding GitHub repository
